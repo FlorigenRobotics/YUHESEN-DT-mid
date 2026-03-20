@@ -96,7 +96,7 @@ namespace yhs{
 		msg.ctrl_cmd_gear=6; 
 		msg.ctrl_cmd_linear=cmd_vel_msg->linear.x;
 		msg.ctrl_cmd_angular=(cmd_vel_msg->angular.z)*180/3.14;
-		msg.ctrl_cmd_slipangle=0;
+		// msg.ctrl_cmd_slipangle=0;
 
 		ctrl_cmd_publisher_->publish(msg);
 
